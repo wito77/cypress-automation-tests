@@ -1,0 +1,24 @@
+{
+  "name": "cypress-testy",
+  "version": "1.0.0",
+  "description": "Testy automatyczne cypress",
+  "main": "index.js",
+  "scripts": {
+    "open": "npx cypress open",
+    "delete:reports": "rm cypress/results/* || true",
+    "prereport": "npm run delete:reports"
+  },
+  "keywords": [
+    "cypress",
+    "testy",
+    "automatyczne"
+  ],
+  "author": "Kacper Witosław",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress-audit/lighthouse": "^1.3.0",
+    "cypress": "^9.7.0",
+    "cypress-multi-reporters": "^1.6.0",
+    "mocha-junit-reporter": "^2.0.2"
+  }
+}
